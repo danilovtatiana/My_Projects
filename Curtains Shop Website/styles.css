@@ -1,57 +1,6 @@
 /* GOOGLE FONTS  */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-
-/* VARIABLES CSS */
-
-/* :root {
-  --header-height: 3rem; */
-  /* Colors */
- /* --first-color: #FF0047;
- --title-color: #393939;
- --text-color: #707070;
- --text-color-light: #A6A6A6;
- --body-color: #FBFEFD;
- --container-color: #FFFFFF; */
-
-  /* Fonts */
-  /* --body-font: 'Poppins', sans-serif;
-  --biggest-font-size: 2.25rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem; */
-
-  /* Font weight */
-  /* --font-medium: 500;
-  --font-semi-bold: 600; */
-
-  /* Margins */
-  /* --mb-1: .5rem;
-  --mb-2: 1rem;
-  --mb-3: 1.5rem;
-  --mb-4: 2rem;
-  --mb-5: 2.5rem;
-  --mb-6: 3rem; */
-
-  /* z index */
-  /* --z-tooltip: 10;
-  --z-fixed: 100;
-} */
-
-/* @media screen and (min-width: 768px){
-  :root{
-    --biggest-font-size: 4rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
-  }
-} */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
 
 html, body {
   margin: 0;
@@ -65,16 +14,19 @@ header{
   align-items: center;
   justify-content: space-around;
   color: black;
+  border-bottom: 1px solid #dde2eb;
 }
 
 .logo {
   letter-spacing: 3px;
+  line-height: 25%;
+  text-align: center;
+  color: #FF0047;
 }
 
 .nav {
   display: flex;
   justify-content: space-around;
-  width: 30%;
 }
 
 .nav__item {
@@ -84,6 +36,17 @@ header{
 
 .nav__link {
   color: black;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1.5rem;
+  float: left;
+  display: block;
+  padding: 14px 16px;
   text-decoration: none;
-  font-size: 1.2em;
+}
+
+
+/* Change the color of links on hover */
+.nav__link:hover {
+  background-color: #FF0047;
+  color: white;
 }
