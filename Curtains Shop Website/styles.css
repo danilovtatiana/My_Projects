@@ -144,11 +144,22 @@ iframe {
 }
 
 footer {
-  padding-left: 200px;
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+  justify-content: center;
+
 }
 
 .maps {
   padding-left: 50px;
+  padding-top: 50px;
+}
+
+.bx {
+  color: #FF0047;
+  font-size: 25px;
+}
+.contact_us {
+  font-size: 20px;
+  font-family: 'League Spartan', sans-serif;
 }
