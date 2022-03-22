@@ -97,7 +97,7 @@ header{
 }
 
 .content__item {
-   color: #5c5a57;
+   color: black;
    display:block;
    padding: 14px 16px;
  }
@@ -109,12 +109,18 @@ header{
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
 }
-.content__item:hover:after { transform: scaleX(1); }
-.content__item.fromRight:after{ transform-origin:100% 50%; }
-.content__item.fromLeft:after{  transform-origin:  0% 50%; }
 
 .content__item:hover {
   color: #FF0047;
+}
+.content__item:hover:after {
+  transform: scaleX(1);
+}
+.content__item.fromRight:after{
+  transform-origin:100% 50%;
+}
+.content__item.fromLeft:after{
+  transform-origin: 0% 50%;
 }
 
 /* CONTACT */
