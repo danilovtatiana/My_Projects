@@ -62,7 +62,7 @@ header{
 }
 
 .about__img{
-  width:350px;
+  width: 350px;
   border-radius: .5rem;
   float: left;
   padding-right: 50px;
@@ -83,7 +83,7 @@ header{
 /* HOME */
 
 .home__img {
-  width: 70%;
+  width: 50%;
   float: left;
 }
 
@@ -91,9 +91,9 @@ header{
   font-family: 'League Spartan', sans-serif;
   font-size: 1.25rem;
   padding-top: 25px;
-  padding-left: 50px;
+  padding-left: 150px;
   text-align: justify;
-  width: 350px;
+  width: 25%;
 }
 
 .content__item {
@@ -121,6 +121,13 @@ header{
 }
 .content__item.fromLeft:after{
   transform-origin: 0% 50%;
+}
+.content__description {
+  color: grey;
+  font-size: 20px;
+}
+.content__description:hover {
+  color: #FF0047;
 }
 
 /* CONTACT */
