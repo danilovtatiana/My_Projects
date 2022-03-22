@@ -93,16 +93,28 @@ header{
   padding-top: 25px;
   padding-left: 50px;
   text-align: justify;
+  width: 350px;
 }
+
 .content__item {
-  display: block;
-  padding: 14px 16px;
-  border-bottom: 3px solid grey;
+   color: #5c5a57;
+   display:block;
+   padding: 14px 16px;
+ }
+
+.content__item:after {
+  display:block;
+  content: '';
+  border-bottom: 2px solid #FF0047;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
+.content__item:hover:after { transform: scaleX(1); }
+.content__item.fromRight:after{ transform-origin:100% 50%; }
+.content__item.fromLeft:after{  transform-origin:  0% 50%; }
 
 .content__item:hover {
   color: #FF0047;
-  border-bottom: 3px solid #FF0047;
 }
 
 /* CONTACT */
