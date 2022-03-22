@@ -46,6 +46,7 @@ header{
 
 .home {
   display: flex;
+  margin-bottom: 100px;
 }
 
 /* Change the color of links on hover */
@@ -57,7 +58,7 @@ header{
 /* ABOUT */
 
 .about {
-  margin: 50px 200px 50px 200px;
+  margin: 50px 200px 100px 200px;
   padding-bottom: 20%;
 }
 
@@ -68,7 +69,7 @@ header{
   padding-right: 50px;
 }
 
-.about__title {
+.about__title, .contact__title{
   color: black;
   font-family: 'League Spartan', sans-serif;
   font-size: 2rem;
@@ -107,7 +108,7 @@ header{
    padding: 14px 16px;
  }
 
-.content__item:after, .about__title:after {
+.content__item:after, .about__title:after, .contact__title:after {
   display:block;
   content: '';
   border-bottom: 2px solid #FF0047;
@@ -115,16 +116,16 @@ header{
   transition: transform 250ms ease-in-out;
 }
 
-.content__item:hover, .about__title:hover{
+.content__item:hover, .about__title:hover, .contact__title:hover{
   color: #FF0047;
 }
-.content__item:hover:after, .about__title:hover:after {
+.content__item:hover:after, .about__title:hover:after, .contact__title:hover:after {
   transform: scaleX(1);
 }
-.content__item.fromRight:after, .about__title.fromRight:after{
+.content__item.fromRight:after, .about__title.fromRight:after, .contact__title.fromRight:after{
   transform-origin:100% 50%;
 }
-.content__item.fromLeft:after, .about__title.fromLeft:after{
+.content__item.fromLeft:after, .about__title.fromLeft:after, .contact__title.fromLeft:after{
   transform-origin: 0% 50%;
 }
 .content__description, .about__description{
@@ -146,4 +147,8 @@ footer {
   padding-left: 200px;
   display: flex;
   margin-bottom: 50px;
+}
+
+.maps {
+  padding-left: 50px;
 }
