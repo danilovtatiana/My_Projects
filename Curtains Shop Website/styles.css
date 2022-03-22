@@ -8,11 +8,10 @@ html, body {
 }
 
 header{
-  width: 100%;
-  height: 100px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin: auto;
   color: black;
   border-bottom: 1px solid #dde2eb;
 }
@@ -34,20 +33,28 @@ header{
   margin: 0;
 }
 
-.nav__link {
+.nav__link, .nav__mail, .nav__phone {
   color: black;
   font-family: 'League Spartan', sans-serif;
   font-size: 1.5rem;
-  float: left;
-  display: block;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+#nav_mail, #nav_phone {
+  font-size: 40px;
+}
+.nav__icon {
+  display: flex;
+  align-items: center;
 }
 
 .home {
   display: flex;
   margin-bottom: 100px;
+  justify-content: space-around;
 }
+
 
 /* Change the color of links on hover */
 .nav__link:hover {
@@ -58,15 +65,14 @@ header{
 /* ABOUT */
 
 .about {
-  margin: 50px 200px 100px 200px;
+  display: flex;
+  justify-content: space-around;
   padding-bottom: 20%;
 }
 
 .about__img{
   width: 350px;
   border-radius: .5rem;
-  float: right;
-  padding-right: 50px;
 }
 
 .about__title, .contact__title{
@@ -89,15 +95,14 @@ header{
 /* HOME */
 
 .home__img {
-  width: 50%;
   float: left;
+
 }
 
 .home__content {
   font-family: 'League Spartan', sans-serif;
   font-size: 1.25rem;
   padding-top: 25px;
-  padding-left: 150px;
   text-align: justify;
   width: 25%;
 }
