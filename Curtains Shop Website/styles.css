@@ -44,6 +44,9 @@ header{
   text-decoration: none;
 }
 
+.home {
+  display: flex;
+}
 
 /* Change the color of links on hover */
 .nav__link:hover {
@@ -53,9 +56,9 @@ header{
 
 /* ABOUT */
 
-.about{
+.about {
   margin: 50px 200px 50px 200px;
-
+  padding-bottom: 20%;
 }
 
 .about__img{
@@ -75,5 +78,42 @@ header{
 .about__description {
   font-size: 1.5rem;
   text-align: justify;
+}
 
+/* HOME */
+
+.home__img {
+  width: 70%;
+  float: left;
+}
+
+.home__content {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 1.25rem;
+  padding-top: 25px;
+  padding-left: 50px;
+  text-align: justify;
+}
+.content__item {
+  display: block;
+  padding: 14px 16px;
+  border-bottom: 3px solid grey;
+}
+
+.content__item:hover {
+  color: #FF0047;
+  border-bottom: 3px solid #FF0047;
+}
+
+/* CONTACT */
+
+iframe {
+  width: 250px;
+  height: 250px;
+}
+
+footer {
+  padding-left: 200px;
+  display: flex;
+  margin-bottom: 50px;
 }
