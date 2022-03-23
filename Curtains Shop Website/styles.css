@@ -14,8 +14,21 @@ header{
   margin: auto;
   color: black;
   border-bottom: 1px solid #dde2eb;
+  position: sticky;
+  top: 0;
+  flex-wrap: wrap;
+  background-color: #eaeaea;
+  transition: top 500ms ease-in-out;
 }
 
+header.scroll-up,
+header:focus-within {
+  top: 0;
+}
+
+header.scroll-down {
+  top: -100%;
+}
 .logo {
   letter-spacing: 3px;
   line-height: 25%;
@@ -52,7 +65,7 @@ header{
 .home {
   display: flex;
   margin-bottom: 100px;
-  justify-content: space-around;
+  height: 1000px;
 }
 
 
@@ -67,7 +80,6 @@ header{
 .about {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 20%;
 }
 
 .about__img{
@@ -88,23 +100,24 @@ header{
 }
 
 .about__content {
-  width: 50%;
+  width: 40%;
 }
 
 
 /* HOME */
 
 .home__img {
-  float: left;
-
+  /* float: left; */
+  width: 70%;
 }
 
 .home__content {
   font-family: 'League Spartan', sans-serif;
   font-size: 1.25rem;
-  padding-top: 25px;
-  text-align: justify;
   width: 25%;
+  padding-left: 50px;
+  align-self: center;
+
 }
 
 .content__item {
@@ -152,6 +165,7 @@ footer {
   display: flex;
   margin-bottom: 100px;
   justify-content: center;
+  background-color: #eaeaea;
 
 }
 
