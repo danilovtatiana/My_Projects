@@ -1,16 +1,27 @@
 const submitButton = document.getElementById('submit_button');
 const tasks = document.getElementById('tasks');
 const messageElement = document.getElementById('message');
+const clearButton = document.getElementById('clear_button');
+const greetingMessage = "Good, you have no tasks today!";
 
 submitButton.addEventListener('click', addTask);
-tasks.addEventListener('click',handleTaskClick)
+tasks.addEventListener('click',handleTaskClick);
+clearButton.addEventListener('click', clearList);
 
 function displayMessage(message){
   messageElement.innerText = message;
   messageElement.style.visibility = "visible";
 }
 
-displayMessage("Good, you have no tasks today!");
+displayMessage(greetingMessage);
+
+function clearList(){
+  const taskList = tasks.getElementsByClassName("list-group-item");
+  while (taskList.length > 0){
+    taskList[0].parentNode.removeChild(taskList[0]);
+  }
+  displayMessage(greetingMessage);
+}
 
 function handleTaskClick(event){
   const style = event.target.style;
@@ -24,7 +35,7 @@ function handleTaskClick(event){
 function addTask(){
   const newTask = document.getElementById('newTask');
   if (inputIsValid(newTask.value)) {
-    tasks.innerHTML += '<li class = "list-group">' + newTask.value + '</li>';
+    tasks.innerHTML += '<li class = "list-group-item">' + newTask.value + '</li>';
     newTask.value = "";
     messageElement.style.visibility = "hidden";
   }else {
