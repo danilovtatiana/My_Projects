@@ -7,3 +7,11 @@
 #clear_button {
   width: 100%;
 }
+.container {
+  cursor: pointer;
+}
+
+.content {
+  background-color: red;
+  height: 100%;
+}
