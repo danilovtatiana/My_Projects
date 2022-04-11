@@ -1,7 +1,9 @@
-const submitButton = document.getElementById("submit_button");
+const submitButton = document.getElementById('submit_button');
 const tasks = document.getElementById('tasks');
 const messageElement = document.getElementById('message');
+
 submitButton.addEventListener('click', addTask);
+tasks.addEventListener('click',handleTaskClick)
 
 function displayMessage(message){
   messageElement.innerText = message;
@@ -9,6 +11,15 @@ function displayMessage(message){
 }
 
 displayMessage("Good, you have no tasks today!");
+
+function handleTaskClick(event){
+  const style = event.target.style;
+  if (!style.textDecoration) {
+    style.textDecoration = "line-through";
+  }else {
+    style.textDecoration = "";
+  }
+}
 
 function addTask(){
   const newTask = document.getElementById('newTask');
