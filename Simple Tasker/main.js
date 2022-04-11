@@ -5,5 +5,14 @@ submitButton.addEventListener('click', addTask);
 
 function addTask(){
   const newTask = document.getElementById('newTask');
-  tasks.innerHTML += '<li class = "list-group">' + newTask.value + '</li>';
-}
+  if (inputIsValid(newTask.value)) {
+    tasks.innerHTML += '<li class = "list-group">' + newTask.value + '</li>';
+    newTask.value = "";
+  }
+
+function inputIsValid(input) {
+  if (input) {
+    return true;
+  }
+    return false;
+  }
