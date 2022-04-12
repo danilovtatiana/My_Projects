@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator DIV</title>
+  </head>
+  <style media="screen">
+
+    body {
+      width: 100%;
+      height: 100%;
+      background-color: #ddd;
+    }
+    #calculator {
+      background-color: #dde;
+      border: 1px solid black;
+      width: 292px;
+      height: 400px;
+      margin: auto;
+    }
+    .display {
+      border: 1px solid black;
+      width: 292px;
+      height: 60px;
+      text-align: right;
+      line-height: 80px;
+      font-size: 40px;
+    }
+
+    .cell {
+      display: inline-block; /*put the buttons on the same line */
+    }
+
+    button {
+      display: block;
+      width: 70px;
+      padding: 20px;
+      font-size: 20px;
+      text-align: center;
+    }
+    .equal {
+      display: block;
+      width: 143px;
+    }
+
+  </style>
+  <body>
+    <div class="body">
+      <div id="calculator">
+        <div class="display">
+          0
+        </div>
+        <div class="buttons">
+          <div class="rows">
+            <div class="cell"><button type="button" name="button">AC</button></div>
+            <div class="cell"><button type="button" name="button">+/-</button></div>
+            <div class="cell"><button type="button" name="button">%</button></div>
+            <div class="cell"><button type="button" name="button">/</button></div>
+          </div>
+          <div class="rows">
+            <div class="cell"><button type="button" name="button">7</button></div>
+            <div class="cell"><button type="button" name="button">8</button></div>
+            <div class="cell"><button type="button" name="button">9</button></div>
+            <div class="cell"><button type="button" name="button">X</button></div>
+            </div>
+          <div class="rows">
+            <div class="cell"><button type="button" name="button">4</button></div>
+            <div class="cell"><button type="button" name="button">5</button></div>
+            <div class="cell"><button type="button" name="button">6</button></div>
+            <div class="cell"><button type="button" name="button">-</button></div>
+          </div>
+            <div class="rows">
+              <div class="cell"><button type="button" name="button">1</button></div>
+              <div class="cell"><button type="button" name="button">2</button></div>
+              <div class="cell"><button type="button" name="button">3</button></div>
+              <div class="cell"><button type="button" name="button">+</button></div>
+            </div>
+            <div class="rows">
+              <div class="cell"><button type="button" name="button">0</button></div>
+              <div class="cell"><button type="button" name="button">,</button></div>
+              <div class="cell"><button class="equal" type="button" name="button">=</button></div>
+              </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
