@@ -15,7 +15,7 @@ body {
   border: 1px solid black;
 }
 
-.calculator .display {
+.calculator #display {
   background-color: grey;
   height: 70px;
   display: flex;
@@ -23,6 +23,7 @@ body {
   justify-content: flex-end;
   border: 1px solid black;
   font-size: 40px;
+  color: black;
 }
 
 .buttons {
