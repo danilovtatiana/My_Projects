@@ -14,7 +14,7 @@ body {
   border-radius: 5px;
 }
 
-.display {
+#display {
   height: 73px;
   border: 1px solid black;
   background-color: #b4acbf;
