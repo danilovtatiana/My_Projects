@@ -163,9 +163,10 @@ iframe {
 
 footer {
   display: flex;
-  margin-bottom: 100px;
+  /* margin-bottom: 50px; */
   justify-content: center;
   background-color: #eaeaea;
+  border-bottom: 50px solid #FF0047;
 
 }
 
