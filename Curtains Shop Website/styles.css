@@ -157,13 +157,13 @@ header.scroll-down {
 /* CONTACT */
 
 iframe {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
+  padding-right: 20px;
 }
 
 footer {
   display: flex;
-  /* margin-bottom: 50px; */
   justify-content: center;
   background-color: #eaeaea;
   border-bottom: 50px solid #FF0047;
@@ -182,4 +182,10 @@ footer {
 .contact_us {
   font-size: 20px;
   font-family: 'League Spartan', sans-serif;
+}
+
+.contact {
+  padding-right: 150px;
+  padding-bottom: 20px;
+  /* justify-content: center; */
 }
