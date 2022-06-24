@@ -62,18 +62,6 @@ header.scroll-down {
   align-items: center;
 }
 
-.home {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 100px;
-}
-
-.home__img{
-    min-height: 100%;
-    min-width: 800px;
-    margin-top: 50px;
-}
-
 
 /* Change the color of links on hover */
 .nav__link:hover {
@@ -113,24 +101,25 @@ header.scroll-down {
 
 /* HOME */
 
+.home {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 100px;
+}
 .home__img {
-  /* float: left; */
-  width: 70%;
+  width: 100%;
 }
 
 .home__content {
   font-family: 'League Spartan', sans-serif;
   font-size: 1.25rem;
   width: 25%;
-  padding-left: 50px;
-  align-self: center;
-
 }
 
 .content__item {
    color: black;
    display:block;
-   padding: 14px 16px;
  }
 
 .content__item:after, .about__title:after, .contact__title:after {
@@ -194,5 +183,14 @@ footer {
 .contact {
   padding-right: 150px;
   padding-bottom: 20px;
-  /* justify-content: center; */
+}
+
+
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 12px;
+  margin-bottom: 50px;
 }
