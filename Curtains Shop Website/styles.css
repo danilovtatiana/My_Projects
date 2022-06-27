@@ -30,6 +30,7 @@ header:focus-within {
 header.scroll-down {
   top: -100%;
 }
+
 .logo {
   letter-spacing: 3px;
   line-height: 25%;
@@ -71,24 +72,21 @@ header.scroll-down {
   100% {
     transform: scale(1, 1);
   }
-
   25% {
     transform: scale(0.9, 1.1);
   }
-
   50% {
     transform: scale(1.1, 0.9);
   }
-
   75% {
     transform: scale(0.95, 1.05);
   }
 }
+
 .nav__icon {
   display: flex;
   align-items: center;
 }
-
 
 /* Change the color of links on hover */
 .nav__link:hover {
@@ -107,7 +105,6 @@ header.scroll-down {
 .about__img{
   width: 400px;
   border-radius: .5rem;
-  padding-left: 450px;
 }
 
 .about__title, .contact__title{
@@ -121,11 +118,9 @@ header.scroll-down {
   font-size: 1.5rem;
   text-align: justify;
 }
-
 .about__content {
   width: 40%;
 }
-
 
 /* HOME */
 
@@ -135,6 +130,7 @@ header.scroll-down {
   align-items: center;
   padding-bottom: 50px;
 }
+
 .home__img {
   width: 100%;
 }
@@ -161,15 +157,19 @@ header.scroll-down {
 .content__item:hover, .about__title:hover, .contact__title:hover{
   color: #FF0047;
 }
+
 .content__item:hover:after, .about__title:hover:after, .contact__title:hover:after {
   transform: scaleX(1);
 }
+
 .content__item.fromRight:after, .about__title.fromRight:after, .contact__title.fromRight:after{
   transform-origin:100% 50%;
 }
+
 .content__item.fromLeft:after, .about__title.fromLeft:after, .contact__title.fromLeft:after{
   transform-origin: 0% 50%;
 }
+
 .content__description, .about__description{
   color: grey;
   font-size: 22px;
@@ -191,7 +191,6 @@ footer {
   justify-content: space-around;
   background-color: #eaeaea;
   border-bottom: 50px solid #FF0047;
-
 }
 
 .maps {
@@ -203,10 +202,12 @@ footer {
   color: #FF0047;
   font-size: 25px;
 }
+
 .contact_us {
   font-size: 20px;
   font-family: 'League Spartan', sans-serif;
 }
+
 .contact_us:hover{
   color: #FF0047;
 }
@@ -229,7 +230,6 @@ i:hover{
   margin-bottom: 50px;
 }
 
-/* Slideshow container */
 .slideshow-container {
   position: relative;
   z-index: 0;
@@ -240,9 +240,7 @@ i:hover{
   display: none;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
+.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -269,7 +267,6 @@ i:hover{
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @keyframes fade {
   from {
     opacity: .4
@@ -291,91 +288,20 @@ i:hover{
   opacity: 0.7;
 }
 
-/* The Modal (background) */
-.modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  padding-top: 100px;
-  /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0);
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/ opacity */
-}
-
-/* Modal Content (Image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-/* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-/* Add Animation - Zoom in the Modal */
-.modal-content,
-#caption {
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-  from {
-    transform: scale(0)
-  }
-
-  to {
-    transform: scale(1)
-  }
-}
-
-
+/* GO TO TOP BUTTON */
 #myBtn {
   display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Fixed/sticky position */
+  position: fixed; /* Fixed/sticky position */
   bottom: 50px;
-  /* Place the button at the bottom of the page */
   right:10px;
-  /* Place the button 10px from the right */
-  z-index: 99;
-  /* Make sure it does not overlap */
+  z-index: 99; /* Make sure it does not overlap */
   border: none;
-  /* Remove borders */
-  color: white;
-  /* Text color */
   cursor: pointer;
-  /* Add a mouse pointer on hover */
   padding: 15px;
-  /* Some padding */
   border-radius: 10px;
-  /* Rounded corners */
 }
 
+/* DOTS */
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;

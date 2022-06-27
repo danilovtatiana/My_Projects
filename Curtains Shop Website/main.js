@@ -1,3 +1,5 @@
+// GO TO TOP BUTTON
+
 //Get the button:
 mybutton = document.getElementById("myBtn");
 
@@ -14,8 +16,10 @@ function scrollFunction() {
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.documentElement.scrollTop = 0;
 }
+
+//SHOWSLIDE-CONTAINER
 
 let slideIndex = 1;
 showSlides(slideIndex);
