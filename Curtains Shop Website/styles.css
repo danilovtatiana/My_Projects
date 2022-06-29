@@ -222,15 +222,11 @@ i:hover{
   color: #FF0047;
 }
 
-#portfolio {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 12px;
+#portfolio{
+  overflow: auto;
+  white-space: nowrap;
   margin-bottom: 50px;
 }
-
 
 #slideshow-container {
   position: relative;
@@ -281,8 +277,13 @@ i:hover{
   }
 }
 
-/* Style the Image Used to Trigger the Modal */
+/* Style the image to scroll horizontal */
 .myImg {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
   width: 400px;
   height: 300px;
   border-radius: 5px;
@@ -290,10 +291,9 @@ i:hover{
   transition: 0.3s;
 }
 
-.myImg:hover {
-  opacity: 0.7;
+myImg:hover {
+  background-color: #777;
 }
-
 /* GO TO TOP BUTTON */
 #myBtn {
   display: none;
