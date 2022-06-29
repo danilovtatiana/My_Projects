@@ -193,7 +193,7 @@ footer {
   border-bottom: 50px solid #FF0047;
 }
 
-.maps {
+#maps {
   padding-left: 50px;
   padding-top: 50px;
 }
@@ -203,12 +203,12 @@ footer {
   font-size: 25px;
 }
 
-.contact_us {
+#contact_us {
   font-size: 20px;
   font-family: 'League Spartan', sans-serif;
 }
 
-.contact_us:hover{
+#contact_us:hover{
   color: #FF0047;
 }
 
@@ -221,7 +221,7 @@ i:hover{
   color: #FF0047;
 }
 
-.portfolio {
+#portfolio {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -230,7 +230,8 @@ i:hover{
   margin-bottom: 50px;
 }
 
-.slideshow-container {
+
+#slideshow-container {
   position: relative;
   z-index: 0;
 }
@@ -238,6 +239,8 @@ i:hover{
 /* Hide the images by default */
 .mySlides {
   display: none;
+  width: 1100px;
+  height: 650px;
 }
 
 .prev, .next {
@@ -278,13 +281,15 @@ i:hover{
 }
 
 /* Style the Image Used to Trigger the Modal */
-#myImg {
+.myImg {
+  width: 400px;
+  height: 300px;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-#myImg:hover {
+.myImg:hover {
   opacity: 0.7;
 }
 
