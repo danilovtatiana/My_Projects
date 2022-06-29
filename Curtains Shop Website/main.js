@@ -138,10 +138,10 @@ const loadMap = (list) => {
 /// mock objects 
 
 const navMenulist = [
-  {title: 'Home',link: 'home', id: ''},
-  {title: 'Portofoliu', link: 'portfolio', id: ''},
-  {title: 'Magazine', link: 'stores', id: ''},
-  {title: 'Contact', link: 'contact', id: ''},
+  {title: 'Home',link: 'home', id: 'home'},
+  {title: 'Portofoliu', link: 'portfolio', id: 'portfolio'},
+  {title: 'Magazine', link: 'stores', id: 'stores'},
+  {title: 'Contact', link: 'contact', id: 'contact'},
 ]
 
 const articles = [
@@ -201,4 +201,6 @@ const emailContacts = [
 ]
   // 
   // {phoneContact: '0723-173-184'},
+
+
 
