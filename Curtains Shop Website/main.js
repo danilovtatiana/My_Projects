@@ -4,13 +4,13 @@
 mybutton = document.getElementById("myBtn");
 
 window.onload = (event) => {
-  loadArticles(articles);
+  // loadArticles(articles);
   loadMenuItems(event);
   loadPortfolio(portfolio);
   loadMap(maps);
   // loadSlides(slides);
   loadAddressContacts(addressContacts);
-  loadEmailContacts(emailContacts);
+  // loadEmailContacts(emailContacts);
 }
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -75,22 +75,23 @@ const loadMenuItems = (event) => {
   const parent = document.getElementById('navigation-menu');
   const menuArray = [];
   navMenulist.forEach(item => {
-    menuArray.push(`<li class="nav__item"><a href="${item.link}" class="nav__link">${item.title}</a></li>`);
+    menuArray.push(`<li class="nav__item"><a href="${item.link}" id="nav_element" class="nav__link">${item.title}</a></li>`);
   });
   parent.innerHTML = menuArray.join('');
 }
 
-const loadArticles = (list) => {
-    const articleArray = [];
-    const parent = document.getElementById('side__content');
+// const loadArticles = (list) => {
+//     const articleArray = [];
+//     const parent = document.getElementById('side__content');
 
-  list.forEach( (article) => {
-    const htmlArticle = `<h2 class="content__item">${article.title}</h2>
-        <span class="content__description"><i>${article.content}</i></span> `
-    articleArray.push(htmlArticle);
-  })
-  parent.innerHTML = articleArray.join('');
-}
+//   list.forEach( (article) => {
+//     const htmlArticle = 
+//     `<h2 class="content__item">${article.title}</h2>
+//         <span class="content__description"><i>${article.content}</i></span> `
+//     articleArray.push(htmlArticle);
+//   })
+//   parent.innerHTML = articleArray.join('');
+// }
 
 const loadPortfolio = (list) => {
   const portfolioArray = [];
@@ -122,8 +123,6 @@ const loadMap = (list) => {
   parent.innerHTML = mapArray.join('');
 };
 
-
-
 // const loadEmailContacts = (list) => {
 //   const emailArray = [];
 //   const parent = document.getElementById('contact');
@@ -144,24 +143,24 @@ const navMenulist = [
   {title: 'Contact', link: 'contact', id: 'contact'},
 ]
 
-const articles = [
-  {
-    title: 'Despre noi',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus a eligendi et omnis natus quas modi ut nihil, maxime sequi adipisci minus dolore.'
-  },
-  {
-    title: 'Design',
-    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eius quam consequuntur alias saepe, repellendus, quia in perspiciatis minus amet autem quas'
-  },
-  {
-    title: 'Proiectare 3D',
-    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eius quam consequuntur alias saepe, repellendus, quia in perspiciatis minus amet autem quas'
-  },
-  {
-    title: 'Accesorii',
-    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eius quam consequuntur alias saepe, repellendus, quia in perspiciatis minus amet autem quas'
-  }
-]
+// const articles = [
+//   {
+//     title: 'Despre noi',
+//     content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus a eligendi et omnis natus quas modi ut nihil, maxime sequi adipisci minus dolore.'
+//   },
+//   {
+//     title: 'Design',
+//     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eius quam consequuntur alias saepe, repellendus, quia in perspiciatis minus amet autem quas'
+//   },
+//   {
+//     title: 'Proiectare 3D',
+//     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eius quam consequuntur alias saepe, repellendus, quia in perspiciatis minus amet autem quas'
+//   },
+//   {
+//     title: 'Accesorii',
+//     content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eius quam consequuntur alias saepe, repellendus, quia in perspiciatis minus amet autem quas'
+//   }
+// ]
 
 const portfolio = [
   {imgSource: "https://i.pinimg.com/736x/64/2a/8d/642a8dfa058c4917a42d9276f5ace279.jpg"},

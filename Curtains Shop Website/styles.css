@@ -37,6 +37,7 @@ header.scroll-down {
   line-height: 25%;
   text-align: center;
   color: #FF0047;
+  cursor: pointer;
 }
 
 .nav {
@@ -106,6 +107,7 @@ header.scroll-down {
 .about__img{
   width: 400px;
   border-radius: .5rem;
+  cursor: pointer;
 }
 
 .about__title, .contact__title{
@@ -113,6 +115,7 @@ header.scroll-down {
   font-family: 'League Spartan', sans-serif;
   font-size: 2rem;
   text-align: left;
+  cursor: pointer;
 }
 
 .about__description {
@@ -122,6 +125,7 @@ header.scroll-down {
 .about__content {
   width: 40%;
 }
+
 
 /* HOME */
 
@@ -145,7 +149,9 @@ header.scroll-down {
 .content__item {
    color: black;
    display:block;
+   cursor: pointer;
  }
+
 
 .content__item:after, .about__title:after, .contact__title:after {
   display:block;
@@ -155,9 +161,9 @@ header.scroll-down {
   transition: transform 250ms ease-in-out;
 }
 
-.content__item:hover, .about__title:hover, .contact__title:hover{
+/* .content__item:hover, .about__title:hover, .contact__title:hover{
   color: #FF0047;
-}
+} */
 
 .content__item:hover:after, .about__title:hover:after, .contact__title:hover:after {
   transform: scaleX(1);
@@ -174,11 +180,50 @@ header.scroll-down {
 .content__description, .about__description{
   color: grey;
   font-size: 22px;
+  cursor: pointer;
 }
-.content__description:hover{
+/* .content__description:hover, .about__description:hover{
+  color: #FF0047;
+} */
+
+.about__content:hover .about__title{
   color: #FF0047;
 }
 
+.about__content:hover .about__description{
+  color: #FF0047;
+}
+
+.about__us:hover .content__item {
+  color: #FF0047;
+}
+
+.about__us:hover .content__description {
+  color: #FF0047;
+}
+
+.design:hover .content__item {
+  color: #FF0047;
+}
+
+.design:hover .content__description {
+  color: #FF0047;
+}
+.threeD:hover .content__item {
+  color: #FF0047;
+}
+
+.threeD:hover .content__description {
+  color: #FF0047;
+}
+
+.accessories:hover .content__title {
+  color: #FF0047;
+}
+
+.accessories:hover .content__description {
+  color: #FF0047;
+}
 /* CONTACT */
 
 iframe {
@@ -207,6 +252,7 @@ footer {
 #contact_us {
   font-size: 20px;
   font-family: 'League Spartan', sans-serif;
+  cursor: pointer;
 }
 
 #contact_us:hover{
@@ -218,9 +264,9 @@ footer {
   padding-bottom: 20px;
 }
 
-i:hover{
+/* i:hover{
   color: #FF0047;
-}
+} */
 
 #portfolio{
   overflow: auto;
