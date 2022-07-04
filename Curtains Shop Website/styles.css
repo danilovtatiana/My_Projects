@@ -101,6 +101,7 @@ header.scroll-down {
 .about {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding-bottom: 50px;
 }
 
@@ -123,7 +124,7 @@ header.scroll-down {
   text-align: justify;
 }
 .about__content {
-  width: 40%;
+  width: 60%;
 }
 
 
@@ -134,10 +135,6 @@ header.scroll-down {
   justify-content: space-around;
   align-items: center;
   padding-bottom: 50px;
-}
-
-.home__img {
-  width: 100%;
 }
 
 .home__content {
@@ -161,9 +158,9 @@ header.scroll-down {
   transition: transform 250ms ease-in-out;
 }
 
-/* .content__item:hover, .about__title:hover, .contact__title:hover{
+.contact__title:hover{
   color: #FF0047;
-} */
+}
 
 .content__item:hover:after, .about__title:hover:after, .contact__title:hover:after {
   transform: scaleX(1);
@@ -217,7 +214,7 @@ header.scroll-down {
   color: #FF0047;
 }
 
-.accessories:hover .content__title {
+.accessories:hover .content__item {
   color: #FF0047;
 }
 
@@ -240,7 +237,7 @@ footer {
 }
 
 #maps {
-  padding-left: 50px;
+  padding-right: 20px;
   padding-top: 50px;
 }
 
@@ -337,15 +334,15 @@ footer {
   transition: 0.3s;
 }
 
-myImg:hover {
-  background-color: #777;
+.myImg:hover, .about__img:hover {
+  opacity: 0.7;
 }
 /* GO TO TOP BUTTON */
 #myBtn {
   display: none;
   position: fixed; /* Fixed/sticky position */
   bottom: 50px;
-  right:10px;
+  right: 10px;
   z-index: 99; /* Make sure it does not overlap */
   border: none;
   cursor: pointer;
@@ -384,5 +381,80 @@ myImg:hover {
 
   to {
     opacity: 1
+  }
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
   }
 }

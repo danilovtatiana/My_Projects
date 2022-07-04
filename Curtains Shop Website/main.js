@@ -133,6 +133,24 @@ const loadMap = (list) => {
 //   parent.innerHTML = emailArray.join('');
 // }
 
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
 
 /// mock objects 
 
@@ -167,6 +185,9 @@ const portfolio = [
   {imgSource: "https://ae05.alicdn.com/kf/Sf7267465e8ee44c9a2ef2fefb53675f8s/Vintage-Birds-Print-Country-Curtains-for-Living-Room-Bedroom-Decorative-Kitchen-Curtains-Drapes-Window-Treatments-Rustic.jpg"},
   {imgSource: "https://ae05.alicdn.com/kf/H1944882923494016ba7c718b2564eb16s/Modern-Blackout-Curtains-for-Living-Room-Decoration-Stitching-Color-Curtain-for-The-Bedroom-Grey-Blue-Curtain.jpg"},
   {imgSource: "https://www.ikea.com/kr/en/images/products/sanela-room-darkening-curtains-1-pair-dark-blue__0887619_pe638577_s5.jpg?f=s"},
+  {imgSource: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAGkHcnpRtxFIc-jrWXKWQaQzcj8ImOVilLQ&usqp=CAU"},
+  {imgSource: "https://www.curtaincompany.com.au/assets/images/services/services-curtain.jpg"},
+
 ]
 
 const maps = [
