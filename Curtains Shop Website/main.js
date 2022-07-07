@@ -6,7 +6,7 @@ mybutton = document.getElementById("myBtn");
 window.onload = (event) => {
   // loadArticles(articles);
   // loadMenuItems(event);
-  loadPortfolio(portfolio);
+  // loadPortfolio(portfolio);
   loadMap(maps);
   // loadSlides(slides);
   loadAddressContacts(addressContacts);
@@ -142,15 +142,15 @@ function showSlides(n) {
 //   parent.innerHTML = articleArray.join('');
 // }
 
-const loadPortfolio = (list) => {
-  const portfolioArray = [];
-  const parent = document.getElementById('portfolio')
-  list.forEach((image) => {
-    const htmlPortfolio =`<img class="myImg" src= ${image.imgSource}>`
-    portfolioArray.push(htmlPortfolio);
-  });
-  parent.innerHTML = portfolioArray.join('');
-}
+// const loadPortfolio = (list) => {
+//   const portfolioArray = [];
+//   const parent = document.getElementById('portfolio')
+//   list.forEach((image) => {
+//     const htmlPortfolio =`<img class="myImg" src= ${image.imgSource}>`
+//     portfolioArray.push(htmlPortfolio);
+//   });
+//   parent.innerHTML = portfolioArray.join('');
+// }
 
 const loadAddressContacts = (list) => {
   const adressArray = [];
@@ -182,15 +182,21 @@ const loadMap = (list) => {
 //   parent.innerHTML = emailArray.join('');
 // }
 
-// Get the modal
+// create references to the modal...
 var modal = document.getElementById("myModal");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
+// // to all images
+var images = document.getElementsByClassName("myImg");
+// the image in the modal
 var modalImg = document.getElementById("img01");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
+
+var showModal = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+}
+// Go through all of the images 
+for (var i = 0; i <images.length; i++){
+  images[i].addEventListener('click', showModal);
 }
 
 // Get the <span> element that closes the modal
@@ -200,6 +206,8 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+
 
 /// mock objects 
 
@@ -229,15 +237,15 @@ span.onclick = function() {
 //   }
 // ]
 
-const portfolio = [
-  {imgSource: "https://i.pinimg.com/736x/64/2a/8d/642a8dfa058c4917a42d9276f5ace279.jpg"},
-  {imgSource: "https://ae05.alicdn.com/kf/Sf7267465e8ee44c9a2ef2fefb53675f8s/Vintage-Birds-Print-Country-Curtains-for-Living-Room-Bedroom-Decorative-Kitchen-Curtains-Drapes-Window-Treatments-Rustic.jpg"},
-  {imgSource: "https://ae05.alicdn.com/kf/H1944882923494016ba7c718b2564eb16s/Modern-Blackout-Curtains-for-Living-Room-Decoration-Stitching-Color-Curtain-for-The-Bedroom-Grey-Blue-Curtain.jpg"},
-  {imgSource: "https://www.ikea.com/kr/en/images/products/sanela-room-darkening-curtains-1-pair-dark-blue__0887619_pe638577_s5.jpg?f=s"},
-  {imgSource: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAGkHcnpRtxFIc-jrWXKWQaQzcj8ImOVilLQ&usqp=CAU"},
-  {imgSource: "https://www.curtaincompany.com.au/assets/images/services/services-curtain.jpg"},
+// const portfolio = [
+//   {imgSource: "https://i.pinimg.com/736x/64/2a/8d/642a8dfa058c4917a42d9276f5ace279.jpg"},
+//   {imgSource: "https://ae05.alicdn.com/kf/Sf7267465e8ee44c9a2ef2fefb53675f8s/Vintage-Birds-Print-Country-Curtains-for-Living-Room-Bedroom-Decorative-Kitchen-Curtains-Drapes-Window-Treatments-Rustic.jpg"},
+//   {imgSource: "https://ae05.alicdn.com/kf/H1944882923494016ba7c718b2564eb16s/Modern-Blackout-Curtains-for-Living-Room-Decoration-Stitching-Color-Curtain-for-The-Bedroom-Grey-Blue-Curtain.jpg"},
+//   {imgSource: "https://www.ikea.com/kr/en/images/products/sanela-room-darkening-curtains-1-pair-dark-blue__0887619_pe638577_s5.jpg?f=s"},
+//   {imgSource: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAGkHcnpRtxFIc-jrWXKWQaQzcj8ImOVilLQ&usqp=CAU"},
+//   {imgSource: "https://www.curtaincompany.com.au/assets/images/services/services-curtain.jpg"},
 
-]
+// ]
 
 const maps = [
   

@@ -105,7 +105,7 @@ header.scroll-down {
   padding-bottom: 50px;
 }
 
-.about__img{
+#about__img{
   width: 400px;
   border-radius: .5rem;
   cursor: pointer;
@@ -334,7 +334,7 @@ footer {
   transition: 0.3s;
 }
 
-.myImg:hover, .about__img:hover {
+.myImg:hover, #about__img:hover {
   opacity: 0.7;
 }
 /* GO TO TOP BUTTON */
