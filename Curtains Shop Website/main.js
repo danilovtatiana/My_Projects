@@ -29,6 +29,7 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+//Smooth scrolling 
 
 function currentYPosition() {
     // Firefox, Chrome, Opera, Safari
@@ -40,7 +41,6 @@ function currentYPosition() {
     if (document.body.scrollTop) return document.body.scrollTop;
     return 0;
 }
-
 
 function elmYPosition(eID) {
     var elm = document.getElementById(eID);
@@ -79,16 +79,6 @@ function smoothScroll(eID) {
 }
 //SHOWSLIDE-CONTAINER
 
-// const loadSlides = (list) => {
-//   const slidesArray = [];
-//   const parent = document.getElementById('slideshow-container');
-//   list.forEach((slide) => {
-//     const htmlSlide = `<div class="mySlides fade"><img ${slide.slideSource}></div>`;
-//     slidesArray.push(htmlSlide);
-//   }) ;
-//   parent.innerHTML = slidesArray.join('');
-// };
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -118,7 +108,69 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+//modal image
 
+// create references to the modal...
+var modal = document.getElementById("myModal");
+
+// to all images
+var images = document.getElementById("about__img");
+// the image in the modal
+var modalImg = document.getElementById("img01");
+
+images.onclick = function(){
+  modal.style.display = "flex";
+  modalImg.src = this.src;
+}
+
+// var showModal = function(){
+//     modal.style.display = "block";
+//     modalImg.src = this.src;
+// }
+// Go through all of the images 
+// for (var i = 0; i <images.length; i++){
+//   images[i].addEventListener('click', showModal);
+// }
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// image gallery, open and close the images with prev and next buttons 
+function closeM() {
+  document.getElementById("modal-gall").style.display = "none"; 
+}
+function popUp(element) {
+    document.getElementById("modal-gall").style.display = "flex"; 
+    document.getElementById("modal-slides").src = element.src; 
+}
+var imageIndex = 1;
+function slideR(n) {
+  showSlide((imageIndex += n));
+}
+
+function showSlide(n) {
+  var slides = document.querySelectorAll("#portfolio img");
+
+  if (n > slides.length) {imageIndex = 1;}
+  if (n < 1) {imageIndex = slides.length;}
+  document.getElementById("modal-slides").src = slides[imageIndex - 1].src;
+}
+
+
+// const loadSlides = (list) => {
+//   const slidesArray = [];
+//   const parent = document.getElementById('slideshow-container');
+//   list.forEach((slide) => {
+//     const htmlSlide = `<div class="mySlides fade"><img ${slide.slideSource}></div>`;
+//     slidesArray.push(htmlSlide);
+//   }) ;
+//   parent.innerHTML = slidesArray.join('');
+// };
 
 // const loadMenuItems = (event) => {
 //   console.log('event ===> ', event)
@@ -182,61 +234,6 @@ const loadMap = (list) => {
 //   });
 //   parent.innerHTML = emailArray.join('');
 // }
-
-// create references to the modal...
-var modal = document.getElementById("myModal");
-
-// to all images
-var images = document.getElementById("about__img");
-// the image in the modal
-var modalImg = document.getElementById("img01");
-
-images.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-}
-
-// var showModal = function(){
-//     modal.style.display = "block";
-//     modalImg.src = this.src;
-// }
-// Go through all of the images 
-// for (var i = 0; i <images.length; i++){
-//   images[i].addEventListener('click', showModal);
-// }
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-
-function closeM() {
-  document.getElementById("modal-gall").style.display = "none"; 
-}
-function popUp(element) {
-    document.getElementById("modal-gall").style.display = "flex"; 
-    document.getElementById("modal-slides").src = element.src; 
-}
-var imageIndex = 1;
-function slideR(n) {
-  showSlide((imageIndex += n));
-}
-
-function showSlide(n) {
-  var slides = document.querySelectorAll("#portfolio img");
-
-  if (n > slides.length) {imageIndex = 1;}
-  if (n < 1) {imageIndex = slides.length;}
-  document.getElementById("modal-slides").src = slides[imageIndex - 1].src;
-}
-
-
-
-
 
 /// mock objects 
 

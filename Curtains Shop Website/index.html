@@ -9,19 +9,21 @@
     <link rel="stylesheet" href="styles.css">
     <!-- SCROLL REVEAL -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
   </head>
+
   <body>
     <!-- GO TO TOP BUTTON -->
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class='bx bxs-chevron-up-square' id="top_button"></i></button>
 
 <!-- HEADER -->
     <header>
+      <!-- logo -->
       <div class="logo">
         <h1 class="logo">Jeorjette</h1>
         <p>-Perdele & Draperii-</p>
       </div>
 
+      <!-- menu -->
       <nav>
         <ul class="nav" id="navigation-menu">
           <li class="nav__item"><a href="#home" onclick="smoothScroll('home-page');" class="nav__link">Home</a></li>
@@ -31,6 +33,7 @@
         </ul>
       </nav>
 
+      <!-- contact details -->
       <div class="nav__icon">
         <i class='bx bx-envelope' id="nav_mail"></i><a href="mailto:info@jeorjette.ro"class="nav__mail"> info@jeorjette.ro</a>
         <i class='bx bx-phone' id="nav_phone"></i><span class="nav__phone"> 0723-173-184</span>
@@ -42,30 +45,12 @@
     <div class="home" id="home-page">
       <!-- SLIDESHOW-CONTAINER -->
       <div id="slideshow-container">
-        <div class="mySlides fade"><img src="https://shop.static.ingka.ikea.com/category-images/Category_curtains.jpg"width="1100px" height="650px"></div>
-      
-        <div class="mySlides fade">
-          <img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,w_730/at%2Fproduct%20listing%2Fshade-store-pinch-pleat-drapery" width="1100px" height="650px">
-        </div>
-      
-        <div class="mySlides fade">
-          <img src="https://images.squarespace-cdn.com/content/v1/53cd6ad6e4b03157ad28c10f/1485977954333-EZRYZLH4YQQ4B2X0X0ZQ/ke17ZwdGBToddI8pDm48kJGvPks7W-x-ufyzB9Tw0e1Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpzwb00BviQxzGCm133ffOYzwwypB4bD5ISIaxBEu0_aLYDapOC4CyiXJt27lAtrGXs/Plantation+Shutters%2C+Shutters%2C+Louvered+Shutters%2C+Plantation+Blinds" width="1100px" height="650px"> 
-        </div>
-
-        <div class="mySlides fade">
-          <img
-            src="https://i.pinimg.com/originals/4e/37/13/4e3713ef730eeb3a2ffe6815057e934a.jpg" width="1100px" height="650px">
-        </div>
-
-        <div class="mySlides fade">
-          <img
-            src="https://lirp.cdn-website.com/df1809b06a36453bbff1f1b772ccd3f8/dms3rep/multi/opt/blogimage-1920w.jpg"width="1100px" height="650px">
-        </div>
-
-        <div class="mySlides fade">
-          <img
-            src="https://www.decorsnob.com/wp-content/uploads/Blinds-And-Curtains.jpg" width="1100px" height="650px">
-        </div>
+        <div class="mySlides fade"><img src="https://shop.static.ingka.ikea.com/category-images/Category_curtains.jpg"></div>
+        <div class="mySlides fade"><img src="https://cdn.apartmenttherapy.info/image/upload/f_auto,q_auto:eco,w_730/at%2Fproduct%20listing%2Fshade-store-pinch-pleat-drapery"></div>
+        <div class="mySlides fade"><img src="https://images.squarespace-cdn.com/content/v1/53cd6ad6e4b03157ad28c10f/1485977954333-EZRYZLH4YQQ4B2X0X0ZQ/ke17ZwdGBToddI8pDm48kJGvPks7W-x-ufyzB9Tw0e1Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpzwb00BviQxzGCm133ffOYzwwypB4bD5ISIaxBEu0_aLYDapOC4CyiXJt27lAtrGXs/Plantation+Shutters%2C+Shutters%2C+Louvered+Shutters%2C+Plantation+Blinds"></div>
+        <div class="mySlides fade"><img src="https://i.pinimg.com/originals/4e/37/13/4e3713ef730eeb3a2ffe6815057e934a.jpg"></div>
+        <div class="mySlides fade"><img src="https://lirp.cdn-website.com/df1809b06a36453bbff1f1b772ccd3f8/dms3rep/multi/opt/blogimage-1920w.jpg"></div>
+        <div class="mySlides fade"><img src="https://www.decorsnob.com/wp-content/uploads/Blinds-And-Curtains.jpg"></div>
         
         <!-- DOTS -->
         <div style="text-align:center">
@@ -81,21 +66,15 @@
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
+      
         <!-- HOME CONTENT -->
 
       <div class="home__content" id="side__content"> 
-        <section class="about__us"><h2 class="content__item">Despre noi</h2>
-        <span class="content__description"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus a eligendi et
-            omnis natus quas modi ut nihil, maxime sequi adipisci minus dolore.</i></span></section>
-        <section class="design"><h2 class="content__item">Design</h2>
-        <span class="content__description"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eius quam
-            consequuntur alias saepe, repellendus, quia in perspiciatis minus amet autem quas</i></span></section>
-        <section class="threeD"><h2 class="content__item">Proiectare 3D</h2>
-        <span class="content__description"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nesciunt minus
-            nobis totam corrupti architecto eaque quasi. </i></span></section>
-        <section class="accessories"><h2 class="content__item">Accesorii</h2>
-        <span class="content__description"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ea doloribus enim
-            architecto provident voluptatum aut iusto dolore quaerat quod quasi ut molestiae</i></span></section>
+
+        <section class="about__us"><h2 class="content__item">Despre noi</h2><span class="content__description"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus a eligendi etomnis natus quas modi ut nihil, maxime sequi adipisci minus dolore.</i></span></section>
+        <section class="design"><h2 class="content__item">Design</h2><span class="content__description"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eius quam consequuntur alias saepe, repellendus, quia in perspiciatis minus amet autem quas</i></span></section>
+        <section class="threeD"><h2 class="content__item">Proiectare 3D</h2><span class="content__description"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nesciunt minus nobis totam corrupti architecto eaque quasi. </i></span></section>
+        <section class="accessories"><h2 class="content__item">Accesorii</h2><span class="content__description"><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ea doloribus enimarchitecto provident voluptatum aut iusto dolore quaerat quod quasi ut molestiae</i></span></section>
         
       </div>
     </div>
@@ -108,6 +87,7 @@
         <p> <i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</i></p>
         <p> <i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</i></p></span>
       </div>
+
       <!-- Trigger the Modal -->
       <img src="https://i.pinimg.com/736x/02/66/8d/02668dd30f8b2d75f70498d6d78611f3.jpg" alt="" id="about__img" class="myImg">
 
@@ -133,6 +113,8 @@
         <img class="myImg" src="https://i5.walmartimages.com/asr/3895dfc1-020d-4f0c-8ec5-de0c34b687a9_1.df5703de21ee94a5f62b72d45a118b39.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="" onclick="popUp(this);">
         <img class="myImg" src="https://i5.walmartimages.com/asr/5a73ac13-c4d0-4570-bf1d-4d9cfc92b9f2.30fb251c33f248e3117fda1ec8236f3e.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="" onclick="popUp(this);">
       </div>
+      
+       <!-- next and prev buttons -->
         <div id="modal-gall">
           <a href="javascript:void(0);" class="closem" onclick="closeM()">&times;</a>
           <div class="modal-content">
