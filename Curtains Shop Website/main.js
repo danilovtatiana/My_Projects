@@ -92,6 +92,7 @@ function smoothScroll(eID) {
 let slideIndex = 1;
 showSlides(slideIndex);
 
+
 // // Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -185,19 +186,24 @@ const loadMap = (list) => {
 // create references to the modal...
 var modal = document.getElementById("myModal");
 
-// // to all images
-var images = document.getElementsByClassName("myImg");
+// to all images
+var images = document.getElementById("about__img");
 // the image in the modal
 var modalImg = document.getElementById("img01");
 
-var showModal = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
+images.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
 }
+
+// var showModal = function(){
+//     modal.style.display = "block";
+//     modalImg.src = this.src;
+// }
 // Go through all of the images 
-for (var i = 0; i <images.length; i++){
-  images[i].addEventListener('click', showModal);
-}
+// for (var i = 0; i <images.length; i++){
+//   images[i].addEventListener('click', showModal);
+// }
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
@@ -206,6 +212,29 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+
+function closeM() {
+  document.getElementById("modal-gall").style.display = "none"; 
+}
+function popUp(element) {
+    document.getElementById("modal-gall").style.display = "flex"; 
+    document.getElementById("modal-slides").src = element.src; 
+}
+var imageIndex = 1;
+function slideR(n) {
+  showSlide((imageIndex += n));
+}
+
+function showSlide(n) {
+  var slides = document.querySelectorAll("#portfolio img");
+
+  if (n > slides.length) {imageIndex = 1;}
+  if (n < 1) {imageIndex = slides.length;}
+  document.getElementById("modal-slides").src = slides[imageIndex - 1].src;
+}
+
+
 
 
 

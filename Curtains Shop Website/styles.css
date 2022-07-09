@@ -415,7 +415,7 @@ footer {
   display: block;
   width: 80%;
   max-width: 700px;
-}
+} */
 
 /* Add Animation - Zoom in the Modal */
 .modal-content,
@@ -443,7 +443,7 @@ footer {
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
-}
+} */
 
 .close:hover,
 .close:focus {
@@ -452,9 +452,72 @@ footer {
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-  .modal-content {
-    width: 100%;
-  }
+#modal-gall {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: 8px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.97);
+  align-items: center;
+  justify-content: center;
 }
+
+.closem {
+  cursor: pointer;
+  color: #9e97b1;
+  position: absolute;
+  top: 26px;
+  right: 0px;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 5px 0 0 5px;
+  padding: 2px 16px 8px 16px;
+  z-index: 2;
+  background-color: #29272e;
+  text-decoration: none;
+}
+
+.closem:hover,
+.closem:focus {
+  color: #FF0047;
+  cursor: pointer;
+}
+
+.prevm,
+.nextm {
+  cursor: pointer;
+  position: absolute;
+  top: 46%;
+  width: auto;
+  padding: 10px 22px;
+  margin-top: -10px;
+  color: #9e97b1;
+  font-weight: bold;
+  font-size: 30px;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: #29272e;
+  text-decoration: none;
+}
+
+.prevm {
+  left: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.nextm {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+.prevm:hover,
+.nextm:hover {
+  background-color: #322c42;
+}
+
+  
